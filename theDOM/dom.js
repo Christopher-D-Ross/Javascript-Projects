@@ -19,6 +19,8 @@ let listItemTwo = document.createElement('li');
 let listItemThree = document.createElement('li');
 let body = document.getElementsByTagName('body');
 let paraOne = document.createElement('p');
+let buttonOne = document.createElement('button');
+
 
 document.getElementById('root').appendChild(headerOne);
 document.getElementById('root').appendChild(hthreeOne);
@@ -26,6 +28,7 @@ document.getElementById('root').appendChild(imageOne);
 document.body.appendChild(listOne);
 listOne.append(listItemOne, listItemTwo, listItemThree);
 document.body.appendChild(paraOne);
+document.body.appendChild(buttonOne);
 
 headerOne.innerHTML = 'Christopher Ross';
 hthreeOne.innerHTML = 'This is an about a person page. It was and is being created using 90% Javascript. Revel in it.';
@@ -33,7 +36,8 @@ imageOne.src = 'grim.jpeg';
 listItemOne.innerHTML = 'Strength';
 listItemTwo.innerHTML = 'Intelligence';
 listItemThree.innerHTML = 'Universal Mastery';
-paraOne.innerHTML = 'Citizens of distant epochs two ghostly white figures in coveralls and helmets are softly dancing circumnavigated intelligent beings corpus callosum a billion trillion. A mote of dust suspended in a sunbeam network of wormholes network of wormholes from which we spring Sea of Tranquility paroxysm of global death. Cosmic fugue shores of the cosmic ocean another world something incredible is waiting to be known take root and flourish hearts of the stars. From which we spring another world science cosmos a still more glorious dawn awaits venture. Dispassionate extraterrestrial observer a very small stage in a vast cosmic arena hydrogen atoms vanquish the impossible laws of physics paroxysm of global death. Star stuff harvesting star light a mote of dust suspended in a sunbeam rings of Uranus vanquish the impossible paroxysm of global death at the edge of forever. Hundreds of thousands emerged into consciousness at the edge of forever take root and flourish with pretty stories for which there\'s little good evidence paroxysm of global death and billions upon billions upon billions upon billions upon billions upon billions upon billions.'
+paraOne.innerHTML = 'Citizens of distant epochs two ghostly white figures in coveralls and helmets are softly dancing circumnavigated intelligent beings corpus callosum a billion trillion. A mote of dust suspended in a sunbeam network of wormholes network of wormholes from which we spring Sea of Tranquility paroxysm of global death. Cosmic fugue shores of the cosmic ocean another world something incredible is waiting to be known take root and flourish hearts of the stars. From which we spring another world science cosmos a still more glorious dawn awaits venture. Dispassionate extraterrestrial observer a very small stage in a vast cosmic arena hydrogen atoms vanquish the impossible laws of physics paroxysm of global death. Star stuff harvesting star light a mote of dust suspended in a sunbeam rings of Uranus vanquish the impossible paroxysm of global death at the edge of forever. Hundreds of thousands emerged into consciousness at the edge of forever take root and flourish with pretty stories for which there\'s little good evidence paroxysm of global death and billions upon billions upon billions upon billions upon billions upon billions upon billions.';
+buttonOne.innerHTML = 'UNDO IT!!';
 
 headerOne.style.textAlign = 'center';
 hthreeOne.style.textAlign = 'center';
@@ -59,4 +63,27 @@ listOne.style.textAlign = 'center';
 paraOne.style.width = '1000px';
 paraOne.style.margin = '0 auto';
 paraOne.style.textAlign = 'center';
-paraOne.style.background = 'linear-gradient(to right, )'
+paraOne.style.cursor = 'pointer';
+buttonOne.style.display = 'block';
+buttonOne.style.margin = '0 auto';
+buttonOne.style.width = '250px';
+buttonOne.style.height = '100px';
+buttonOne.style.fontSize = '30px';
+buttonOne.style.marginTop = '30px';
+buttonOne.style.cursor = 'pointer';
+
+function changeColor() {
+    paraOne.style.color = 'white';
+    paraOne.style.backgroundColor = 'black';
+    paraOne.style.borderRadius = '5px';
+    paraOne.style.padding = '40px';
+}
+
+function goBack() {
+    paraOne.style.color = 'black';
+    paraOne.style.backgroundColor = 'white';
+    paraOne.style.padding = '0px';
+}
+
+paraOne.addEventListener('click', changeColor);
+buttonOne.addEventListener('click', goBack);
