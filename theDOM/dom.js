@@ -78,7 +78,7 @@ buttonOne.style.borderRadius = '5px';
 function changeColor() {
     paraOne.style.color = 'white';
     paraOne.style.backgroundColor = 'black';
-    paraOne.style.borderRadius = '5px';
+    paraOne.style.borderRadius = '10px';
     paraOne.style.padding = '40px';
     buttonOne.innerHTML = 'Darkness To Light';
 }
