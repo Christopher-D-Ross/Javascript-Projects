@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+html {
+    background: linear-gradient(to right, crimson, cornsilk);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttonA {
+    height: 100px;
+    width: 250px;
+    background: linear-gradient(to right, lightgreen, lightblue);
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.buttonR {
+    height: 50px;
+    width: 100px;
+    background: linear-gradient(to right, lightgreen, lightblue);
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: none;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    color: slategrey;
+}
+
+input {
+    display: block;
+    width: 10.5rem;
+    height: 2rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border: 1px solid white;
+    border-radius: 2px;
+    text-align: center;
+}
+
+ul {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
